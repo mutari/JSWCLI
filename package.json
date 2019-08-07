@@ -1,0 +1,15 @@
+{
+  "name": "jscli",
+  "version": "1.0.0",
+  "description": "This is the JavaScript version of WCLI and while work exlusevli for the webb This wersion while include a BASS weriant writen in JS and it suports nativ JS",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
