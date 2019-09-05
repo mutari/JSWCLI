@@ -4,21 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+        <title>JSWCLI</title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
     </head>
-    <body>
+    <body onkeydown="if (event.keyCode == 13) Enter();">
         <div id="CLI">
-            <div id="VIEW-port">
-                <p id="bass-tag-null"># </p>
+            <div id="EDITOR-port" class="hide">
+                <div id="code-content" contenteditable="true"></div>
             </div>
-            <div id="INPUT-port">
-                <input type="text" id="input" onkeydown="if (event.keyCode == 13) Enter(this);" autofocus>
+            <div id="CLI-port" class="">
+                <div id="VIEW-port">
+                    <p id="bass-tag-null"># </p>
+                </div>
+                <div id="INPUT-port">
+                    <input type="text" id="input" autofocus>
+                </div>
             </div>
-
+        </div>
+        <div id="CP-port">
+            <input id="controlpanel" type="text">
         </div>
     </body>
 
     <script src="script.js"></script>
+    <script src="../JSCLI/BASS/Init.js"></script>
+    <script src="../JSCLI/BASS/lexer.js"></script>
+    <script src="../JSCLI/BASS/Parser.js"></script>
+    <script src="../JSCLI/WCLI/FileSys.js"></script>
+    <script src="../JSCLI/Debugger/Debug.js"></script>
+
 </html>
